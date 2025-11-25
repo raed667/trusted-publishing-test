@@ -51,5 +51,9 @@ jobs:
       - name: 👷 Build package
         run: yarn build
 
+      - name: 🔐 Setup npm auth
+        run: |
+          echo "registry=https://registry.npmjs.org" >> ~/.npmrc
+
       - name: 📝 Release package
         run: npm publish
