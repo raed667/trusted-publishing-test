@@ -51,4 +51,4 @@ jobs:
         run: yarn build
 
       - name: 📝 Release package
-        run: yarn publish --minor
+        run: npm publish
